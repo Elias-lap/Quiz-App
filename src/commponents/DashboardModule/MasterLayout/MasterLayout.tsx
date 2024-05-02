@@ -5,7 +5,7 @@ import Navbar from "../../sharedCommponents/Navbar";
 const MasterLayout = () => {
   return (
     <div className="flex">
-      <div className="	 ">
+      <div className="">
         <Sidebar />
       </div>
       <div className=" w-full ">

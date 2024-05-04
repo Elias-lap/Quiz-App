@@ -14,20 +14,21 @@ import {
 } from "../../components/ui/dialog"
 import { Input } from "../../components/ui/input"
 import { Label } from "../../components/ui/label"
+import { useState } from "react"
 
 export default function Sidebar() {
+
+  const [open, setopen] = useState(false)
   return (
     <>
     <div>Sidebarrrrrrrrrrrrrddddddddddrrrrrrr</div>
-    {/* <button className=" px-2 my-2  border-solid rounded-xl border border-black-500 mx-3"><i className="fa-solid fa-circle-plus mx-2"></i>Add Group</button> */}
+    <button onClick={()=>setopen(true)} className=" px-2 my-2  border-solid rounded-xl border border-black-500 mx-3"><i className="fa-solid fa-circle-plus mx-2"></i>Add Group</button>
 
     <Dialog>
-      <DialogTrigger asChild>
-        {/* <Button variant="outline">Share</Button> */}
-    <button className=" px-2 my-2  border-solid rounded-xl border border-black-500 mx-3"><i className="fa-solid fa-circle-plus mx-2"></i>Add Group</button>
-
+      <DialogTrigger >
+        <Button variant="outline">Share</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="sm:max-w-md bg-white">
         <DialogHeader>
           <DialogTitle>Share link</DialogTitle>
           <DialogDescription>

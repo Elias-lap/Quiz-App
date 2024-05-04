@@ -7,3 +7,12 @@
 /* .wOutlet{
     width: 100%;
 } */
+
+
+
+/* dialoge x icone */
+.lucide {
+    background-color: blue !important;
+    /* padding: 100px !important; */
+    display: none;
+}
